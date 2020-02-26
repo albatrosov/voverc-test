@@ -1,0 +1,16 @@
+@mixin transition{
+  transition: all .3s ease;
+}
+
+@mixin step_triangle($left, $color){
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 0;
+  left: $left;
+  border-style: solid;
+  border-width: 20px 0 20px 20px;
+  border-color: transparent transparent transparent $color;
+}

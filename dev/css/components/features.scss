@@ -1,0 +1,53 @@
+@import '../variables';
+
+.features{
+  padding: 40px 0;
+  background-color: $bg--dark;
+  color: $white;
+
+  &__list{
+    border-top: 1px solid $border;
+  }
+
+  ul{
+    padding: 15px 0;
+    padding-left: 0;
+    list-style: none;
+
+    li{
+      display: flex;
+      align-items: flex-start;
+      padding-right: 20px;
+      margin-bottom: 20px;
+
+      i{
+        width: 20px;
+        display: block;
+        font-size: 20px;
+        line-height: 26px;
+        color: $accent--sec;
+        opacity: .8;
+        margin-right: 15px;
+      }
+    }
+  }
+
+  p{
+    text-align: center;
+    margin-bottom: 0;
+  }
+}
+
+@media(max-width: 540px){
+  .features{
+
+    ul{
+      margin-bottom: 0;
+      padding-bottom: 0;
+      padding-top: 0;
+      &:first-child{
+        padding-top: 15px;
+      }
+    }
+  }
+}

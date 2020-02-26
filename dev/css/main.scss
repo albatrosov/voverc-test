@@ -1,0 +1,66 @@
+@import 'variables';
+@import 'mixins';
+
+html {
+	overflow-x: hidden;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Noto Sans', Arial, Helvetica, sans-serif;
+	color: $black;
+	overflow-x: hidden;
+	-webkit-overflow-scrolling: touch;
+}
+
+.btn {
+	@include transition;
+
+	&-primary{
+		background: $accent--sec;
+		border-color: $accent--sec;
+		&:hover{
+			background: $accent--main;
+			border-color: $accent--main;
+		}
+	}
+}
+
+h2{
+	margin-bottom: 40px;
+	font-size: 20px;
+	text-align: center;
+
+	.heading_tooltip{
+		display: inline-block;
+		vertical-align: top;
+		margin-left: 5px;
+		margin-top: -5px;
+
+		i{
+			font-size: 16px;
+			color: $gray;
+		}
+
+		&:hover{
+			cursor: pointer;
+			i{
+				color: $accent--main;
+			}
+		}
+	}
+}
+
+a{
+	color: $accent--main;
+	@include transition;
+	&:hover{
+		color: $accent--sec;
+		text-decoration: none;
+	}
+}
+
+input[type="submit"]{
+	appearance: none;
+}

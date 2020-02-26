@@ -1,0 +1,140 @@
+@import '../variables';
+@import '../mixins';
+
+.steps{
+  padding: 20px 0;
+  background: $bg; 
+
+  .step{
+    position: relative;
+    height: 40px;
+    margin: 0 5px;
+    padding: 0 10px 0 30px;
+    background: $white;
+    border: 1px solid $border;
+    border-radius: 3px;
+    font-size: 14px;
+    &:after, &:before {
+      @include step_triangle(-1px, $bg);
+    }
+    &:before{
+      border-color: transparent transparent transparent  $border;
+      left: 0px;
+    }
+
+    span{
+      line-height: 40px;
+      font-size: 12px;
+      color: $gray;
+      &:before{
+        font-family: "Font Awesome 5 Pro";
+        content: '\f058';
+        display: inline-block;
+        font-size: 20px;
+        line-height: 40px;
+        vertical-align: middle;
+        margin-right: 5px;
+        margin-top: -3px;
+        color: $gray;
+      }
+    }
+
+    &:nth-child(1){
+      padding-left: 15px;
+      z-index: 4;
+      &:after, &:before{
+        display: none;
+      }
+    }
+    &:nth-child(2){
+      z-index: 3;
+      span:before{
+        content: '\f022';
+      }
+    }
+    &:nth-child(3){
+      z-index: 2;
+      span:before{
+        content: '\f2bd';
+        font-weight: 900;
+      }
+    }
+    &:nth-child(4){
+      z-index: 1;
+      span:before{
+        content: '\f46d';
+        font-weight: 900;
+      }
+    }
+    &:last-child{
+      padding-right: 15px;
+      .step__triangle{
+        display: none;
+      }
+    }
+
+    &--success span:before{
+      color: $icon--success;
+    }
+    &--current{
+      border-color: $accent--main;
+      span{
+        color: $accent--main;
+      }
+      &:before{
+        border-color: transparent transparent transparent $accent--main;
+      }
+      span:before{
+        color: $icon--current;
+      }
+      .step__triangle:before{
+        border-color: transparent transparent transparent $accent--main;
+      }
+    }
+
+    &__triangle{
+      position: absolute;
+      right: 0;
+      top: -1px;
+      &:after, &:before {
+        @include step_triangle(calc(100% - 2px), $white);
+      }
+      &:before{
+        border-color: transparent transparent transparent  $border;
+        left: calc(100% - 1px);
+      }
+    }
+  }
+}
+
+@media(max-width: 768px){
+  .steps{
+
+    .step{
+      width: calc(50% - 10px - 40px);
+      margin-bottom: 10px;
+      &:first-child{
+        // to align with step below
+        padding-left: 30px;
+      }
+    }
+  }
+}
+
+@media(max-width: 540px){
+  .steps{
+
+    .step{
+      // 10 - margin, 40 = 10 + 30 padding
+      // 20 - align all with the last without forward arrow
+      width: calc(100% - 10px - 40px - 20px);
+      // compencating forward arrow 20px width
+      margin-left: -10px;
+      &:last-child{
+        // 2 - borders
+        width: calc(100% - 10px - 40px - 2px);
+        margin-left: 12px;
+      }      
+    }
+  }
+}

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+  <title>Voverc Test</title>
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<!-- ==HEADER==  -->
+<header class="header">
+  <div class="container-fluid d-flex justify-content-between">
+
+    <a href="/" class="header__logo">
+      <img src="img/logo.png" alt="">
+    </a>
+
+    <div class="mobile_menu">
+      <i class="fas fa-bars"></i>
+    </div>
+    <nav>
+      <a href="tel:7783238486" class="header__phone">
+        778-323-8486
+      </a>
+      <a href="" class="header__chat">
+        <i class="far fa-comment"></i>
+        Sales Chat
+      </a>
+      <div class="mobile_menu__close">
+        +
+      </div>
+    </nav>
+
+  </div>
+</header>
+
+<!-- ==CONTENT==  -->
+<div class="steps">
+  <div class="container d-flex justify-content-center flex-wrap flex-lg-nowrap">
+
+    <div class="step step--success">
+      <span>
+        Choose Number
+      </span>
+      <div class="step__triangle"></div>
+    </div>
+    <div class="step step--current">
+      <span>
+        Choose Plan
+      </span>
+      <div class="step__triangle"></div>
+    </div>
+    <div class="step">
+      <span>
+        Add Users
+      </span>
+      <div class="step__triangle"></div>
+    </div>
+    <div class="step">
+      <span>
+        Checkout
+      </span>
+      <div class="step__triangle"></div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ==PLANS==  -->
+<div class="plans">
+  <div class="container">
+    <h2>
+      Select a plan for your trial 
+      <div class="heading_tooltip" 
+        data-toggle="tooltip" 
+        data-placement="top" 
+        title="Tooltip on top">
+        <i class="fas fa-info-circle"></i>
+      </div>
+    </h2>
+  </div>
+  <div class="container d-flex justify-content-between flex-lg-nowrap flex-wrap">
+
+    <div class="plan col-lg-3 col-sm-6 d-flex flex-column">
+      <h3 class="plan__header">
+        Essentials
+      </h3>
+      <ul>
+        <li>Up to 10 users</li>
+        <li>Toll-free or local number</li>
+        <li>100 toll-free min/mo</li>
+        <li>4 people per video meeting</li>
+      </ul>
+      <div class="plan__price">
+        <p>Price after the trial</p>
+        <span>
+          from <b>$ 29. 99</b> /user/month
+        </span>
+      </div>
+      <div class="plan__select">
+        <div class="custom-control custom-radio">
+          <input type="radio" 
+            id="radio--essentials" 
+            name="radio--plan"
+            class="custom-control-input">
+          <label class="custom-control-label" 
+            for="radio--essentials"></label>
+          <span>Select this plan</span>
+          <a href="" class="btn btn-primary">Continue</a>
+        </div>
+      </div>
+    </div>
+    <div class="plan col-lg-3 col-sm-6 d-flex flex-column">
+      <h3 class="plan__header">
+      	Standard
+      </h3>
+      <ul>
+        <li>Unlimited users</li>
+        <li>Toll-free or local number</li>
+        <li>1,000 toll-free min/mo</li>
+        <li>4 people per video meeting</li>
+        <li>Unlimited internet fax</li>
+      </ul>
+      <div class="plan__price">
+        <p>Price after the trial</p>
+        <span>
+          from <b>$ 34. 99</b> /user/month
+        </span>
+      </div>
+      <div class="plan__select">
+        <div class="custom-control custom-radio">
+          <input type="radio" 
+            id="radio--standard" 
+            name="radio--plan" 
+            class="custom-control-input">
+          <label class="custom-control-label" 
+            for="radio--standard"></label>
+          <span>Select this plan</span>
+          <a href="" class="btn btn-primary">Continue</a>
+        </div>
+      </div>
+    </div>
+    <div class="plan important col-lg-3 col-md-6 d-flex flex-column">
+      <h3 class="plan__header">
+      	Premium
+      </h3>
+      <ul>
+        <li>Unlimited users</li>
+        <li>Toll-free or local number</li>
+        <li>1,500 toll-free min/mo</li>
+        <li>50 people per video meeting</li>
+        <li>Unlimited internet fax</li>
+      </ul>
+      <div class="plan__price">
+        <p>Price after the trial</p>
+        <span>
+          from <b>$ 44. 99</b> /user/month
+        </span>
+      </div>
+      <div class="plan__select">
+        <div class="custom-control custom-radio">
+          <input type="radio" 
+            id="radio--premium" 
+            name="radio--plan" 
+            class="custom-control-input">
+          <label class="custom-control-label" 
+            for="radio--premium"></label>
+          <span>Select this plan</span>
+          <a href="" class="btn btn-primary">Continue</a>
+        </div>
+      </div>
+    </div>
+    <div class="plan col-lg-3 col-md-6 col-sm-12  d-flex flex-column">
+      <h3 class="plan__header">
+      	Ultimate
+      </h3>
+      <ul>
+      	<li>Unlimited users</li>
+        <li>Toll-free or local number</li>
+        <li>2,500 toll-free min/mo</li>
+        <li>75 people per video meeting</li>
+        <li>Unlimited internet fax</li>
+        <li>Automatic call recording</li>
+        <li>Voicemail-to-text</li>
+      </ul>
+      <div class="plan__price">
+        <p>Price after the trial</p>
+        <span>
+          from <b>$ 59. 99</b> /user/month
+        </span>
+      </div>
+      <div class="plan__select">
+        <div class="custom-control custom-radio">
+          <input type="radio" 
+            id="radio--ultimate" 
+            name="radio--plan" 
+            class="custom-control-input">
+          <label class="custom-control-label" 
+            for="radio--ultimate"></label>
+          <span>Select this plan</span>
+          <a href="" class="btn btn-primary">Continue</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+ 
+<!-- ==FEATURES==  -->
+<div class="features">
+  <div class="container">
+    <h2>A complete phone system</h2>
+  </div>
+  <div class="features__list container d-flex justify-content-between flex-wrap flex-lg-nowrap">
+
+    <ul class="col-lg-4 col-sm-6">
+      <li><i class="fas fa-cloud"></i>Cloud PBX</li>
+      <li><i class="far fa-folder"></i>Toll-free minutes per month per account</li>
+      <li><i class="fas fa-fax"></i>Unlimited internet fax</li>
+      <li><i class="fas fa-globe-americas"></i>Global Office</li>
+      <li><i class="fas fa-tty"></i>Toll-free, local, vanity, or international numbers for voice and fax</li>
+      <li><i class="fas fa-bahai"></i>Auto attendant and dial-by-name directory</li>
+      <li><i class="fas fa-desktop"></i>RingCentral for iOS, Android, Mac, and Windows</li>
+    </ul>
+
+    <ul class="col-lg-4 col-sm-6">
+      <li><i class="fas fa-microphone"></i>Audio conferencing</li>
+      <li><i class="fas fa-users"></i>Online meetings</li>
+      <li><i class="fas fa-users-cog"></i>Team collaboration</li>
+      <li><i class="fas fa-user-cog"></i>Intercom</li>
+      <li><i class="fas fa-bars"></i>Shared lines</li>
+      <li><i class="fab fa-product-hunt"></i>Call Park</li>
+      <li><i class="fas fa-phone-volume"></i>Call queues</li>
+      <li><i class="fas fa-tv"></i>Paging</li>
+      <li><i class="fas fa-share"></i>Advanced call forvarding</li>
+    </ul>
+    
+    <ul class="col-lg-4 col-sm-6">
+      <li><i class="fas fa-clipboard-list"></i>Flexible answering rules</li>
+      <li><i class="fas fa-arrows-alt-h"></i>Presence based on multiple devices</li>
+      <li><i class="fas fa-phone-square-alt"></i>Call log reports</li>
+      <li><i class="fas fa-cogs"></i>Templates for batch configurations</li>
+      <li><i class="fas fa-keyboard"></i>Keep your existing phone numbers</li>
+      <li><i class="far fa-clock"></i>FREE 24/7 customer support</li>
+      <li><i class="far fa-check-circle"></i>No set up or activation fees</li>
+      <li><i class="fas fa-user-friends"></i>Implementation advisors, FREE when you sign up for two or more users</li>
+    </ul>
+
+  </div>
+
+  <div class="container">
+    <p>
+      You get everything you need. It's really that convinient.
+    </p>
+  </div>
+
+</div>
+
+<!-- ==LEGAL==  -->
+<div class="legal">
+  <div class="container">
+
+    <a href="">Legal</a>
+
+  </div>
+</div>
+
+
+
+<!-- ==MAIN SCRIPTS==  -->
+<script src="https://kit.fontawesome.com/cbb65d96d8.js" crossorigin="anonymous"></script>
+<script
+src="https://code.jquery.com/jquery-3.3.1.min.js"
+integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+  
+</body>
+</html>
